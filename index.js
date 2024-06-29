@@ -7,8 +7,9 @@ app.use(express.json());
 app.use(routes);
 
 // start the Express server
-app.listen(port, () => {
+let server = app.listen(port, () => {
     console.log(`server started at http://localhost:${port}`);
     });
 
-    
+
+module.exports = server
